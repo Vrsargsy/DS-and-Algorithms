@@ -43,3 +43,22 @@ int main(void)
 	// cout << "Is Sorted ? " << (copy_arr == arr) << endl; 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+void	n2 (vecctor<int> &arr)
+{
+	for(int i = 0; i < arr.size(); ++i)
+	{
+	}
+
+}

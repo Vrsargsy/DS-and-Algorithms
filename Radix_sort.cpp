@@ -27,7 +27,7 @@ void	print(vector<int> &arr)
 
 void    radix_sort(vector<int> &arr) // O(Max len of elements * n)
 {
-	vector< vector<int> > buckets(10);
+	vector<vector<int>> buckets(10);
 	int	power_of_ten = 1;
 	int max_len = max_len_of_elements(arr);
 	for(int pow = 0; pow <= max_len; ++pow)
@@ -45,7 +45,7 @@ void    radix_sort(vector<int> &arr) // O(Max len of elements * n)
 		arr.clear();
 		for(int i = 0; i < buckets.size(); ++i)
 		{
-			for(int j = 0; j < buckets[i].size(); ++j)
+			for(int j = 0; j < buckets[i].size(); ++j) // O (n)
 			{
 				arr.push_back(buckets[i][j]);
 			}
@@ -66,7 +66,7 @@ int main(void)
 		arr.push_back(rand() % 1000);
 	copy_arr = arr;
 	radix_sort(arr);
-	
+
 	// sort(copy_arr.begin(), copy_arr.end());
 	// cout << "Is Sorted ? " << (copy_arr == arr) << endl; 
 

@@ -1,0 +1,13 @@
+In-place Sorting algorithms  { O(1) without memory complexity }
+
+~ Sort in place means that the sort changes the order of the elements in the original array
+without exceeding the array for temporary storage of values. Thus, when sorting in place, 
+the original array significantly influences the sorting process, and no additional memory
+is required to store temporary values.
+
+
+Stable Sorting algorithms
+
+~ A stable sort, on the other hand, is a guarantee that elements with values ​​have 
+ordered orderings in the same order they appear in the original array. A stable sort preserves 
+their relative order in the sort result.

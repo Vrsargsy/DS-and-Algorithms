@@ -4,7 +4,7 @@
 
 using namespace std;
 
-vector<int> merge(vector<int> &a, vector<int> &b) // Merge (n + m)
+vector<int> merge(vector<int> &a, vector<int> &b) // Merge O(n + m)
 {
 	vector<int> merged;
 	int left_id = 0, right_id = 0;
@@ -25,7 +25,6 @@ vector<int> merge(vector<int> &a, vector<int> &b) // Merge (n + m)
 
 	return merged;
 }
-
 
 void    merge_sort(vector<int> &arr) // O( n * log(n) )
 {
